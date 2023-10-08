@@ -8,11 +8,11 @@
 int main(void)
 {
 int i;
-char hex[15] = {'0', '1', '2', '3', '4', '5', '6',
+char hex[16] = {'0', '1', '2', '3', '4', '5', '6',
 '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
 for (i = 0; i <= 14; i++)
 {
-putchar(i);
+putchar(hex[i]);
 }
 putchar('\n');
 return (0);
