@@ -16,5 +16,6 @@ while (i < 26)
 putchar(alphabets[i]);
 i++;
 }
+putchar('\n');
 return (0);
 }
