@@ -16,7 +16,7 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 m = i * j;
-if (m > 9)
+if (m > n)
 {
 u = m % 10;
 d = (m - u) / 10;
