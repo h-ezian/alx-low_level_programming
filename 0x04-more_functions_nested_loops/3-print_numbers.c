@@ -9,6 +9,7 @@ int i = 48;
 while (i <= 57)
 {
 _putchar(i);
+i++;
 }
 _puchar('\n')
 }
