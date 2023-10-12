@@ -11,5 +11,5 @@ while (i <= 57)
 _putchar(i);
 i++;
 }
-_puchar('\n')
+_puchar('\n');
 }
