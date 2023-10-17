@@ -7,12 +7,12 @@
 */
 void print_rev(char *str)
 {
+int j;
 if (!str)
 {
 return;
 }
-
-int j = strlen(str) -1;
+j = strlen(str) - 1;
 while (j >= 0)
 {
 _putchar(str[j]);
