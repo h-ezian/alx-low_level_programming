@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Enter commit message > " message
+if [ -z message ]; then
+ $message="Update"
+fi
+
+ga; gc -m $message; gp
