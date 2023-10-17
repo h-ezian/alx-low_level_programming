@@ -16,7 +16,7 @@ i = strlen(str) / 2;
 }
 else
 {
-i = (strlen(str) - 1) / 2;
+i = (strlen(str) - 2) / 2;
 }
 for (; i < len; i++)
 {
