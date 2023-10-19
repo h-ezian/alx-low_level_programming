@@ -11,10 +11,10 @@ char *cap_string(char *str)
 char *min = "abcdefghijklmnopqrstuvwxyz";
 char *maj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int sep[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
-int i, len, j, upperFlag, k;
-len = strlen(str);
+int i, j, upperFlag, k;
 upperFlag = 0;
-for (i = 0; i < len; i++)
+i = 0;
+while (str[i] != '\0')
 {
 if ((str[i] >= 65 && str[i] <= 90) || (str[i] >= 48 && str[i] <= 57))
 {
@@ -45,6 +45,7 @@ break;
 }
 k++;
 }
+i++;
 }
 return (str);
 }
