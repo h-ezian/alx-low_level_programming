@@ -10,13 +10,13 @@ void reverse_array(int *a, int n)
 {
 int i, j, tmp, stop;
 j = n - 1;
-if (j % 2 == 0)
+if (n % 2 == 0)
 {
-stop = (j - 1) / 2;
+stop = n / 2;
 }
 else
 {
-stop = j / 2;
+stop = (n - 1) / 2;
 }
 for (i = 0; i < stop; i++)
 {
