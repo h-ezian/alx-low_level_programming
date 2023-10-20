@@ -5,29 +5,20 @@
 *@str: pointer to String
 *Return:  pointer to encoded string
 */
-
 char *rot13(char *str)
 {
-char *min = "abcdefghijklmnopqrstuvwxyz";
-char *maj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char *alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char *sbt = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 int i = 0, j;
-
 while (str[i] != '\0')
 {
-j = 0;
-while (j < 26)
+for (j = 0; j < 52; j++)
 {
-if ((str[i] == min[j] || str[i] == maj[j]) && j < 13)
+if (str[i] == alpha[j])
 {
-str[i] = str[i] + 13;
+str[i] = sbt[j];
 break;
 }
-else if ((str[i] == min[j] || str[i] == maj[j]) && j >= 13)
-{
-str[i] = (str[i] + 13) - 26;
-break;
-}
-j++;
 }
 i++;
 }
