@@ -11,7 +11,6 @@ char *rot13(char *str)
 char *min = "abcdefghijklmnopqrstuvwxyz";
 char *maj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int i = 0, j;
-int pos;
 
 while (str[i] != '\0')
 {
