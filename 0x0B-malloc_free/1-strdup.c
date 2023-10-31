@@ -24,6 +24,12 @@ return (NULL);
 length = (strlen(str) + 1) * sizeof(*str);
 
 new_str = malloc(length);
+
+if (new_str == NULL)
+{
+return (NULL);
+}
+
 while (*str)
 {
 new_str[i] = *str;
