@@ -16,7 +16,7 @@ char *tab;
 int length = sizeof(c) * size;
 int i = 0;
 tab = malloc(length);
-if (tab == NULL)
+if (tab == NULL || size == 0)
 {
 return (NULL);
 }
