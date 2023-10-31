@@ -17,12 +17,12 @@ int length;
 char *new_str;
 
 
-if (str == NULL || new_str == NULL)
+if (str == NULL)
 {
 return (NULL);
 }
 length = (strlen(str) + 1) * sizeof(*str);
-printf("%d ", length);
+
 new_str = malloc(length);
 while (*str)
 {
