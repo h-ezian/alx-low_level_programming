@@ -13,18 +13,17 @@
 char *_strdup(char *str)
 {
 int i = 0;
+int length;
 char *new_str;
-if (str == NULL || *str == '\0')
+
+
+if (str == NULL || new_str == NULL)
 {
 return (NULL);
 }
-new_str = malloc(strlen(str) * sizeof(*str));
-
-if (new_str == NULL)
-{
-return (NULL);
-}
-
+length = (strlen(str) + 1) * sizeof(*str);
+printf("%d ", length);
+new_str = malloc(length);
 while (*str)
 {
 new_str[i] = *str;
